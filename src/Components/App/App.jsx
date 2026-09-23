@@ -14,6 +14,7 @@ function App() {
           src="/images/pfp_chat_1.png"
           className={styles.logo}
           alt="Dessin de chat"
+          draggable="false"
         />
         <RxHamburgerMenu className={styles.icon} />
       </div>

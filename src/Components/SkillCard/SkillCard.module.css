@@ -15,3 +15,13 @@
 .skillLogo {
   width: 17px;
 }
+
+@media (min-width: 1200px) {
+  .cardName {
+    font-size: 17px;
+  }
+
+  .skillLogo {
+    width: 23px;
+  }
+}

@@ -78,3 +78,30 @@
   gap: 5px;
   transition: all 0.2s ease;
 }
+
+@media (min-width: 1200px) {
+  .projectContainer {
+    height: 180px;
+    width: 300px;
+  }
+
+  .projectCard {
+    font-size: 28px;
+  }
+
+  .iconGh {
+    font-size: 20px;
+  }
+
+  .iconPlanet {
+    font-size: 17px;
+  }
+
+  .description {
+    font-size: 17.5px;
+  }
+
+  .overlay a {
+    font-size: 16.5px;
+  }
+}
