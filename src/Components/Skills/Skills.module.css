@@ -1,0 +1,78 @@
+.title {
+  font-size: 35px;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  font-family: "Bebas";
+  font-weight: 500;
+}
+
+.skillTitle {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.separator {
+  width: 80%;
+  margin: 1rem;
+  border: none;
+  height: 1px;
+  background-color: var(--light-grey);
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dropdownMenu {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: 1rem;
+  gap: 1rem;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.dropdownMenu:hover p {
+  text-decoration: underline;
+}
+
+.leftArrow {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+  font-size: 25px;
+}
+
+.leftArrowOpen {
+  transform: rotate(0deg);
+}
+
+.rightArrow {
+  transform: rotate(-180deg);
+  transition: transform 0.3s ease;
+  font-size: 25px;
+}
+
+.rightArrowOpen {
+  transform: rotate(0deg);
+}
+
+.frontendContent,
+.backendContent,
+.toolsContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 1rem 0;
+}
+
+.frontendContent,
+.backendContent {
+  margin-bottom: 1rem;
+}

@@ -1,116 +1,47 @@
 import styles from "./App.module.css";
-
-import { useState } from "react";
-
 import { RxHamburgerMenu } from "react-icons/rx";
-import { IoIosArrowUp } from "react-icons/io";
-import { FaCopy } from "react-icons/fa";
 
-import skills from "../../../data/skills.json";
-import projects from "../../../data/projects.json";
-
-import SkillCard from "../SkillCard/SkillCard";
-import ProjectCard from "../ProjectCard/ProjectCard";
+import Contact from "../Contact/Contact";
+import Skills from "../Skills/Skills";
+import Projects from "../Projects/Projects";
 
 function App() {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [isTextCopied, setIsTextCopied] = useState(false);
-
-  function dropDownMenu() {
-    setIsDropdownOpen(!isDropdownOpen);
-  }
-
+  const currentYear = new Date().getFullYear();
   return (
     <>
       <div className={styles.nav}>
-        <p>Thomas</p>
+        <img
+          src="/images/pfp_chat_1.png"
+          className={styles.logo}
+          alt="Dessin de chat"
+        />
         <RxHamburgerMenu className={styles.icon} />
       </div>
-      <section className={styles.greeting}>
-        <p>Salut !</p>
-        <p>Moi c'est Thomas, Développeur Web Fullstack</p>
-        <p>Bienvenue sur mon Portfolio 🫡</p>
-      </section>
-      <section className={styles.skills}>
-        <h2>Compétences</h2>
-
-        <p>Frontend</p>
-        <br />
-        <ul className={styles.frontendContent}>
-          {skills.frontend.map((skill) => (
-            <SkillCard key={skill.name} name={skill.name} />
-          ))}
-        </ul>
-        <br />
-        <p>Backend</p>
-        <br />
-        <ul className={styles.backendContent}>
-          {skills.backend.map((skill) => (
-            <SkillCard key={skill.name} name={skill.name} />
-          ))}
-        </ul>
-        <br />
-        <div className={styles.dropdownMenu} onClick={() => dropDownMenu()}>
-          <IoIosArrowUp
-            className={`${styles.leftArrow} ${
-              isDropdownOpen ? styles.leftArrowOpen : ""
-            }`}
-          />
-          <p>Autres Outils</p>
-          <IoIosArrowUp
-            className={`${styles.rightArrow} ${isDropdownOpen ? styles.rightArrowOpen : ""}`}
-          />
+      <section className={styles.greeting} id="top">
+        <p className={styles.dev}>
+          <span>Développeur Web</span> <span>Fullstack</span>
+        </p>
+        <div className={styles.presentation}>
+          <p>Enchanté, moi c'est Thomas ! </p>
+          <p>
+            J'ai commencé mon aventure de développeur web en 2024, vous vous
+            trouvez actuellement sur mon Portfolio.
+          </p>
+          <p>Je vous souhaite une bonne visite 👋🏻</p>
         </div>
-
-        <br />
-
-        {isDropdownOpen && (
-          <ul className={styles.toolsContent}>
-            {skills.tools.map((skill) => (
-              <SkillCard key={skill.name} name={skill.name} />
-            ))}
-          </ul>
-        )}
       </section>
+      <Projects />
+      <Skills />
+      <Contact />
+      <footer className={styles.footer}>
+        <p className={styles.copyright}>
+          © {currentYear} Thomas Fortin-Bourget. Tous droits réservés.
+        </p>
 
-      <section className={styles.projects}>
-        <h3>Projets</h3>
-        <ul>
-          {projects.map((project) => (
-            <ProjectCard key={project.id} title={project.title} />
-          ))}
-        </ul>
-      </section>
-
-      <section className={styles.contact}>
-        <h4>Contact</h4>
-
-        <img src="#" />
-        <div
-          onClick={async () => {
-            await navigator.clipboard.writeText(
-              "tfortinbourget.thomas@gmail.com",
-              setIsTextCopied(true),
-            );
-            setTimeout(() => {
-              setIsTextCopied(false);
-            }, "2000");
-          }}
-          className={styles.emailContainer}
-        >
-          <p>tfortinbourget.thomas@gmail.com</p>
-          <FaCopy />
-          {isTextCopied && <p>Copié !</p>}
-        </div>
-
-        <a
-          target="_blank"
-          href="https://github.com/NzlThomas"
-          title="Profil Github"
-        >
-          Retrouvez moi sur Github
+        <a href="https://github.com/NzlThomas/portfolio#to-do" target="_blank">
+          Crédits
         </a>
-      </section>
+      </footer>
     </>
   );
 }
