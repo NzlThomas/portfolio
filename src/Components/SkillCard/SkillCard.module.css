@@ -1,0 +1,17 @@
+.cardContainer {
+  display: flex;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
+  width: fit-content;
+  padding: 5px 15px;
+  border-radius: 9999px;
+  gap: 5px;
+}
+
+.cardName {
+  font-size: 14px;
+}
+
+.skillLogo {
+  width: 17px;
+}

@@ -1,30 +1,35 @@
 [
   {
     "id": 1,
-    "preview": "#",
-    "title": "Test1",
-    "deployment": "#",
-    "repository": "#"
+    "image": "/icons/bokubooks.png",
+    "alt": "Logo du site Bokubooks représenté par un livre ouvert.",
+    "backgroundColor": "#1667F0",
+    "textColor": "#ffffff",
+    "title": "Bokubooks",
+    "description": "Bokubooks vous permet de gérer votre bibliothèque, liste d'envies, et l'avancée de vos lectures.",
+    "deployment": "https://bokubooks.vercel.app/",
+    "repository": "https://github.com/NzlThomas/bokubooks-frontend"
   },
   {
     "id": 2,
-    "preview": "#",
-    "title": "Test2",
-    "deployment": "#",
-    "repository": "#"
+    "image": "/icons/toki.png",
+    "alt": "Logo du site Toki représenté par une bulle de conversation.",
+    "backgroundColor": "#121212",
+    "textColor": "#ffffff",
+    "title": "Toki",
+    "description": "Une messagerie instantanée avec vérification d'email, réinitialisation de mot de passe et ajout de photo de profil.",
+    "deployment": "https://toki-msg.vercel.app/",
+    "repository": "https://github.com/NzlThomas/toki-frontend"
   },
   {
     "id": 3,
-    "preview": "#",
-    "title": "Test3",
-    "deployment": "#",
-    "repository": "#"
-  },
-  {
-    "id": 4,
-    "preview": "#",
-    "title": "Test4",
-    "deployment": "#",
-    "repository": "#"
+    "image": "/icons/greencart.png",
+    "alt": "Logo du site Greencart représenté par une feuille d'arbre.",
+    "backgroundColor": "#258529",
+    "textColor": "#ffffff",
+    "title": "GreenCart",
+    "description": "GreenCart est une application simulant le système de panier d'un site de e-commerce fictif.",
+    "deployment": "https://greencart-thomas.netlify.app/",
+    "repository": "https://github.com/NzlThomas/greencart"
   }
 ]

@@ -2,71 +2,71 @@
   "frontend": [
     {
       "name": "HTML",
-      "icon": "#"
+      "icon": "/icons/html.svg"
     },
     {
       "name": "CSS",
-      "icon": "#"
+      "icon": "/icons/css.svg"
     },
     {
       "name": "React",
-      "icon": "#"
+      "icon": "/icons/react.svg"
     },
     {
       "name": "JavaScript",
-      "icon": "#"
+      "icon": "/icons/javascript.svg"
     }
   ],
   "backend": [
     {
       "name": "Node.js",
-      "icon": "#"
+      "icon": "/icons/node.svg"
     },
     {
       "name": "Express",
-      "icon": "#"
+      "icon": "/icons/express.svg"
     },
     {
       "name": "Postgres",
-      "icon": "#"
+      "icon": "/icons/pg.svg"
     },
     {
       "name": "Prisma",
-      "icon": "#"
+      "icon": "/icons/prisma.svg"
     }
   ],
   "tools": [
     {
       "name": "Git",
-      "icon": "#"
+      "icon": "/icons/git.svg"
     },
     {
       "name": "Github",
-      "icon": "#"
+      "icon": "/icons/github.svg"
     },
     {
       "name": "VS Code",
-      "icon": "#"
+      "icon": "/icons/vsc.svg"
     },
     {
       "name": "Penpot",
-      "icon": "#"
+      "icon": "/icons/penpot.svg"
     },
     {
       "name": "Netlify",
-      "icon": "#"
+      "icon": "/icons/netlify.svg"
     },
     {
       "name": "Vercel",
-      "icon": "#"
+      "icon": "/icons/vercel.svg"
     },
     {
       "name": "Render",
-      "icon": "#"
+      "icon": "/icons/render.svg"
     },
     {
       "name": "Neon",
-      "icon": "#"
+      "icon": "/icons/neon.svg"
     }
   ]
 }
