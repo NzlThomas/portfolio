@@ -76,3 +76,42 @@
 .backendContent {
   margin-bottom: 1rem;
 }
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 50px;
+    margin-bottom: 4rem;
+  }
+
+  .skillTitle {
+    font-size: 26px;
+  }
+
+  .separator {
+    width: 40%;
+  }
+
+  .frontendContent,
+  .backendContent,
+  .toolsContent {
+    gap: 20px;
+    padding: 2rem 0;
+    width: 30%;
+  }
+
+  .frontendContent,
+  .backendContent {
+    margin-bottom: 3rem;
+  }
+
+  .dropdownMenu {
+    margin-bottom: 1rem;
+    gap: 1rem;
+    font-size: 26px;
+  }
+
+  .leftArrow,
+  .rightArrow {
+    font-size: 35px;
+  }
+}

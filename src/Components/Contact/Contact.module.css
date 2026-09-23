@@ -75,7 +75,7 @@
 .emailContainer:hover {
   cursor: pointer;
   text-decoration: underline;
-  color: rgb(68, 68, 68);
+  color: rgb(82, 82, 82);
 }
 
 .iconContainer {
@@ -125,4 +125,54 @@
 
 .githubIcon {
   font-size: 22px;
+}
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  .contact {
+    margin-top: 5rem;
+  }
+
+  .profileContainer {
+    width: 20%;
+    height: 450px;
+  }
+
+  .profilePicture {
+    width: 180px;
+    height: 180px;
+  }
+
+  .emailContainer {
+    padding: 13px 18px;
+  }
+
+  .emailContainer p {
+    font-size: 16px;
+  }
+
+  .iconContainer {
+    font-size: 20px;
+  }
+
+  .copied {
+    font-size: 16px;
+    padding: 7px 12px;
+  }
+
+  .githubLink {
+    margin-top: 3rem;
+    padding: 7px 12px;
+    gap: 5px;
+    font-size: 16px;
+  }
+
+  .githubIcon {
+    font-size: 25px;
+  }
 }

@@ -71,3 +71,42 @@
 .footer a:hover {
   text-decoration: none;
 }
+
+@media (min-width: 1200px) {
+  .logo {
+    width: 75px;
+  }
+
+  .icon {
+    font-size: 40px;
+  }
+
+  .greeting {
+    margin-bottom: 9rem;
+  }
+
+  .dev {
+    font-size: 40px;
+    margin-top: 10rem;
+  }
+
+  .presentation {
+    font-size: 21px;
+    margin-top: 6rem;
+    width: 40%;
+  }
+
+  .footer {
+    padding: 2rem;
+  }
+
+  .copyright {
+    margin-top: 1rem;
+    font-size: 17px;
+  }
+
+  .footer a {
+    font-size: 17px;
+    color: whitesmoke;
+  }
+}
