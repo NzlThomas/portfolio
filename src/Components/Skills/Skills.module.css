@@ -4,6 +4,7 @@
   margin-bottom: 2rem;
   font-family: "Bebas";
   font-weight: 500;
+  scroll-margin-top: 85px;
 }
 
 .skillTitle {
@@ -81,6 +82,7 @@
   .title {
     font-size: 50px;
     margin-bottom: 4rem;
+    scroll-margin-top: 120px;
   }
 
   .skillTitle {
