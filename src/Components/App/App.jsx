@@ -1,14 +1,29 @@
 import styles from "./App.module.css";
-import { RxHamburgerMenu } from "react-icons/rx";
+import { useState, useEffect } from "react";
 
 import Contact from "../Contact/Contact";
 import Skills from "../Skills/Skills";
 import Projects from "../Projects/Projects";
+import BurgerMenu from "../BurgerMenu/BurgerMenu";
+import { Twirl as Hamburger } from "hamburger-react";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
   const currentYear = new Date().getFullYear();
+
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
   return (
     <>
+      <BurgerMenu handleCloseModal={() => setIsOpen(false)} isOpen={isOpen} />
+
       <div className={styles.nav}>
         <img
           src="/images/pfp_chat_1.png"
@@ -16,7 +31,10 @@ function App() {
           alt="Dessin de chat"
           draggable="false"
         />
-        <RxHamburgerMenu className={styles.icon} />
+        <Hamburger
+          toggled={isOpen}
+          toggle={setIsOpen}
+        />
       </div>
       <section className={styles.greeting} id="top">
         <p className={styles.dev}>
@@ -39,7 +57,10 @@ function App() {
           © {currentYear} Thomas Fortin-Bourget. Tous droits réservés.
         </p>
 
-        <a href="https://github.com/NzlThomas/portfolio#to-do" target="_blank">
+        <a
+          href="https://github.com/NzlThomas/portfolio#cr%C3%A9dits"
+          target="_blank"
+        >
           Crédits
         </a>
       </footer>

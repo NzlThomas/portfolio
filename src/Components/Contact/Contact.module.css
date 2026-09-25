@@ -4,6 +4,7 @@
   font-family: "Bebas";
   font-weight: 500;
   margin-top: 2rem;
+  scroll-margin-top: 85px;
 }
 
 .contact {
@@ -132,6 +133,7 @@
     font-size: 50px;
     margin-top: 0;
     margin-bottom: 2rem;
+    scroll-margin-top: 120px;
   }
 
   .contact {

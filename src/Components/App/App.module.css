@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  height: 80px;
   overflow: hidden;
   background-color: white;
   position: fixed;
@@ -21,6 +22,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 5rem;
+  scroll-margin-top: 85px;
 }
 
 .dev {
@@ -41,10 +43,6 @@
   text-align: center;
   gap: 1rem;
   width: 80%;
-}
-
-.icon {
-  font-size: 25px;
 }
 
 .footer {
@@ -73,14 +71,13 @@
 }
 
 @media (min-width: 1200px) {
+  .nav {
+    height: 110px;
+  }
+
   .logo {
     width: 75px;
   }
-
-  .icon {
-    font-size: 40px;
-  }
-
   .greeting {
     margin-bottom: 9rem;
   }
