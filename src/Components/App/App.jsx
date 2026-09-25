@@ -34,7 +34,6 @@ function App() {
         <Hamburger
           toggled={isOpen}
           toggle={setIsOpen}
-          className={styles.burgerIcon}
         />
       </div>
       <section className={styles.greeting} id="top">
