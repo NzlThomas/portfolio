@@ -11,6 +11,9 @@ Les icônes utilisées pour la partie "Compétences" proviennent du site [IconSc
 - **[fengquan](https://iconscout.com/contributors/fengquanli)** : Icône VS Code.
 - **[sandyuiuxstudio](https://iconscout.com/fr/contributors/sandyuiuxstudio/)** : Icône Github.
 
+- **[TypeScript](https://www.typescriptlang.org/branding/)** : Icône TypeScript.
+- **[Vitest](https://dashboardicons.com/icons/vitest)** : Icône Vitest.
+
 ### Audio
 
 - Fichiers audio par **[Universfield](https://pixabay.com/users/universfield-28281460/)** et **[Freesound Community](https://pixabay.com/users/freesound_community-46691455/)**

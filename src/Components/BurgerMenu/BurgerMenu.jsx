@@ -26,6 +26,10 @@ function BurgerMenu({ handleCloseModal, isOpen }) {
             Compétences
           </a>
           <hr className={styles.separator} />
+          <a href="#learning" onClick={handleCloseModal}>
+            En progression
+          </a>
+          <hr className={styles.separator} />
           <a href="#contact" onClick={handleCloseModal}>
             Contact
           </a>

@@ -1,0 +1,87 @@
+.learningContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 35px;
+  margin-bottom: 1rem;
+  font-family: "Bebas";
+  font-weight: 500;
+  margin-top: 4rem;
+  scroll-margin-top: 85px;
+}
+
+.learningContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 1rem 0;
+}
+
+.learningCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: clamp(300px, 85vw, 360px);
+  text-align: center;
+  border: 1px solid var(--light-grey);
+  padding: 1rem;
+  height: 220px;
+  border-radius: 10px;
+  background-color: #fdfdfd;
+}
+
+.githubLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: whitesmoke;
+  margin-top: 1.5rem;
+  border: 2px solid #121212;
+  background-color: #121212;
+  padding: 7px 12px;
+  border-radius: 9999px;
+  gap: 5px;
+  transition: all 0.2s ease;
+  font-size: 15px;
+}
+
+.githubLink:hover {
+  background-color: white;
+  color: black;
+}
+
+.githubIcon {
+  font-size: 22px;
+}
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 50px;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    scroll-margin-top: 120px;
+  }
+
+  .learningCard {
+    height: 260px;
+    width: clamp(330px, 20vw, 390px);
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  .githubLink {
+    padding: 7px 12px;
+    gap: 5px;
+    font-size: 16px;
+  }
+
+  .githubIcon {
+    font-size: 25px;
+  }
+}

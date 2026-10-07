@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 
 import Contact from "../Contact/Contact";
 import Skills from "../Skills/Skills";
+import Learning from "../Learning/Learning";
 import Projects from "../Projects/Projects";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import { Twirl as Hamburger } from "hamburger-react";
@@ -23,7 +24,6 @@ function App() {
   return (
     <>
       <BurgerMenu handleCloseModal={() => setIsOpen(false)} isOpen={isOpen} />
-
       <div className={styles.nav}>
         <img
           src="/images/pfp_chat_1.png"
@@ -31,10 +31,7 @@ function App() {
           alt="Dessin de chat"
           draggable="false"
         />
-        <Hamburger
-          toggled={isOpen}
-          toggle={setIsOpen}
-        />
+        <Hamburger toggled={isOpen} toggle={setIsOpen} />
       </div>
       <section className={styles.greeting} id="top">
         <p className={styles.dev}>
@@ -51,6 +48,7 @@ function App() {
       </section>
       <Projects />
       <Skills />
+      <Learning />
       <Contact />
       <footer className={styles.footer}>
         <p className={styles.copyright}>

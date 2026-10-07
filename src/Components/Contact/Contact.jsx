@@ -29,9 +29,9 @@ function Contact() {
 
   return (
     <section className={styles.contact}>
-      <h4 className={styles.title} id="contact">
+      <h5 className={styles.title} id="contact">
         Contact
-      </h4>
+      </h5>
 
       <div className={styles.profileContainer}>
         <div className={styles.profilePicture} onClick={() => easterEgg()}>
