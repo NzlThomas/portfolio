@@ -3,7 +3,7 @@
   margin-bottom: 1rem;
   font-family: "Bebas";
   font-weight: 500;
-  margin-top: 2rem;
+  margin-top: 5rem;
   scroll-margin-top: 85px;
 }
 
@@ -19,7 +19,7 @@
   flex-direction: column;
   align-items: center;
   height: 350px;
-  width: 80%;
+  width: clamp(300px, 85vw, 360px);
   border: 1px solid var(--light-grey);
   box-shadow: 3px 3px 5px 0px #eeeeee;
   border-radius: 3px;
@@ -141,7 +141,7 @@
   }
 
   .profileContainer {
-    width: 20%;
+    width: clamp(330px, 20vw, 390px);
     height: 450px;
   }
 

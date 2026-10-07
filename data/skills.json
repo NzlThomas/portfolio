@@ -68,5 +68,15 @@
       "name": "Neon",
       "icon": "/icons/neon.svg"
     }
+  ],
+  "learning": [
+    {
+      "name": "TypeScript",
+      "icon": "/icons/typescript.svg"
+    },
+    {
+      "name": "Vitest",
+      "icon": "/icons/vitest.svg"
+    }
   ]
 }
